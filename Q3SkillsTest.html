@@ -12,6 +12,7 @@
             background-image: url(https://images.steamusercontent.com/ugc/1856059082910122274/ECF67E476C36A92B4D7A5BBB6E6260A915A7AB7C/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
             background-size: cover;
             background-repeat: no-repeat;
+            font-family: 'Times New Roman'
           
         }
 
@@ -63,71 +64,82 @@
             </ul>
 
             <form class="d-flex">
-               <li class="nav-item">
-                 <a class="nav-link" style="color: white;" href="page5.html">BOOK NOW!</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="page6.html" style="background-color: rgb(138, 177, 231); color: white; border-radius: 50px;" >Create Account</a>
-                </li>
+                  <a class="nav-link" href="page6.html" style="background-color: rgb(182, 205, 236); color: white; border-radius: 50px;text-align: center; width: 200px; height: 30px;">Create Account</a>
             </form>
 
         </div>
      </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="row">
-            <div class="col-9">
-                <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_user_personalization&w=740&q=80" height="50px" width="50px">
-                    <div class="bg-white rounded">
-                        <button class="submit" id="upload" type="file">Upload Photo</button>
-                    </div>
+<br><br>
+
+<center>
+
+<div class="container" style="background-color: white; opacity: 80%; text-align: center; height: auto; border-radius: 15px;">
+     <br>
+
+      <h1 style="text-align: center">Register Now!</h1>
+
+        <p style="text-align: center">Don't know what to do?</p>
+
+        <details class="ontoggle"  style="text-align: center">
+            <summary>Click here!</summary>
+                 <p id="instructions"></p>
+        </details>
+
+     <br>
+
+</div>
+
+<br><br>
+
+<div class="container">
+
+    <div class="row" style="background-color: white; opacity: 80%; text-align: center; height: auto; border-radius: 15px; ">
+        <div class="col-lg-3">
+            <div class="col mb-3 mt-3">
+                <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_user_personalization&w=740&q=80" style="width: 50px; height: 50px; border-radius: 100px;">
+                <br><br>
+
+                <label for="text">Profile Picture</label>
+                <input type="file" class="form-control" accept="image" placeholder="Insert profile picture...">
+
+                <br>
+
+                <button type="button" class="btn btn-primary" onclick="alert('Profile picture has been uploaded.')">Upload Photo</button>
             </div>
         </div>
-    </div>
 
-    <br><br>
 
-    <div class="container-fluid" style="background-color: white; opacity: 80%; border-radius: 15px; width: 500px;">
-        <div class="row">
-            <div class="col">
-                <div class="col-9">
-                    <h1 style="text-align: center">Register Now!</h1>
-
-                    <p style="text-align: center">Don't know what to do?</p>
-
-                    <details class="ontoggle"  style="text-align: center">
-                    <summary>Click here!</summary>
-                        <p id="instructions"></p>
-                    </details>
+            <div class="col-lg-6">
+                <div class="col">
 
                     <br>
 
                     <div class="row">
                         <div class="col">
-                        <label for="fname">First Name</label>
+                        <label for="fname"><b>First Name</b></label>
                         <br>
-                        <input id="fname" name="fname" type="text" placeholder="Enter First Name" class="form-control" required>
+                        <input id="fname" name="fname" type="text" placeholder="Enter first name..." class="form-control" required>
                         </div>
                     </div>
 
                     <div class="col">
-                        <label for="lname">Last Name</label>
+                        <label for="lname"><b>Last Name</b></label>
                         <br>
-                        <input id="lname" name="lname" type="text" placeholder="Enter Last Name" class="form-control" required>
+                        <input id="lname" name="lname" type="text" placeholder="Enter last name..." class="form-control" required>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <label for="age">Age</label>
-                            <input id="age" name="age" type="number" min="1" max="100" class="form-control" required>
+                            <label for="age"><b>Age</b></label>
+                            <input id="age" name="age" type="number" min="1" max="100" class="form-control" placeholder="Enter your age..." required>
                         </div>
 
                         <br>
 
                         <div class="col">
-                            <label for="gender">Gender</label>
+                            <label for="gender"><b>Gender</b></label>
                             
                             <select name="gender" class="form-select">
                             <option>Select...</option>
@@ -140,25 +152,52 @@
                     <br>
 
                     <div class="row">
-                        <label for="email"><b>Email:</b></label>
+                        <label for="email"><b>Email</b></label>
                         <br>
-                        <input id="email" type="email" placeholder="Enter your Email" required>
+                        <input id="email" type="email" placeholder="Enter your email..." class="form-control" required>
                     </div>
+
+                    <br>
 
                     <div class="row">
                         <div class="col">
-                            <label for="number">Contact Number</label>
-                            <input id="number" name="number" type="input" class="form-control" required>
+                            <label for="number"><b>Contact Number</b></label>
+                            <input id="number" name="number" type="input" class="form-control" placeholder="Enter your contact number..." required>
                         </div>
                     </div>
-                        
-                    <br><br>
 
-                    <div class="d-grid gap-3">
-                        <button type="button" class="btn btn-secondary btn-block">Register</button>
+                    <br>
+
+                    <div class="row">
+                        <label for="uname"><b>Username</b></label>
+                        <br>
+                        <input id="uname" type="Uname" placeholder="Enter a username..." class="form-control" required>
                     </div>
 
-                    <br><br>
+                    <br>
+
+                    <div class="row">
+                        <label for="password"><b>Password</b></label>
+                        <br>
+                        <input id="password" type="password" placeholder="Enter your password..." class="form-control" required>
+                    </div>
+
+                    <br>
+                        
+                    <div class="">
+                      <input type="checkbox" class="form-check-input" id="check1" name="confirm" value="yes">
+
+                       <label class="form-check-label" for="check1">I confirm that the information is true and complete.</label>
+
+                     </div>
+
+                    <br>
+
+                    <div class="d-grid gap-3">
+                        <button type="button" class="btn btn-secondary btn-block" onclick="alert('Account successfully registered!')">Register</button>
+                    </div>
+
+                    <br>
 
                     <div class="d-grid gap-3">
                         <button type="reset" class="btn btn-secondary btn-block">Reset</button>
@@ -170,12 +209,12 @@
             </div>
         </div>
     </div>
-</div>
-
+</center>
 <br><br>
 
 <script>
     document.getElementById("instructions").innerHTML = "Please fill out the form truthfully. Once done, review your answers and submit the form.";
+
 </script>
 
 <div id="footer">
